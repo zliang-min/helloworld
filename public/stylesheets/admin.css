@@ -1,0 +1,11 @@
+.clear { clear: both; }
+
+body, ul, li, nav, header { border: none }
+header, nav { display: block; margin: 0; padding: 0; }
+
+body { font-family: '宋体'; font-size: 12px; font-weight: normal }
+
+nav { border-bottom: 1px solid blue; padding: 5px 0 3px 5px; }
+nav ul { display: block; list-style: none; margin: 0; padding: 0; }
+nav li { display: block; float: left; color: blue; margin: 0 20px 0 0; padding: 0 3; }
+nav li.last { margin-right: 0; }

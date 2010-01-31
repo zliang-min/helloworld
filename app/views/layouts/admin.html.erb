@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <title>品牌库管理后台</title>
+    <meta charset="utf-8" />
+    <%= javascript_include_tag 'html5' %>
+    <%= stylesheet_link_tag 'admin' %>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>品牌管理</li>
+          <li>产品管理</li>
+          <li class="last">文章管理</li>
+        </ul>
+        <div class="clear"></div>
+      </nav>
+      <%= yield :subnav %>
+    </header>
+    <div id="content">
+      <%= yield %>
+    </div>
+  </body>
+</html>
