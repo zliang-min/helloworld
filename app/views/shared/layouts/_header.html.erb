@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>品牌产品库-和家网</title>
+<meta name="keywords" content="品牌产品库" />
+<meta name="description" content="品牌产品库" />
+</head>
+<link href="http://js.51hejia.com/css/2010/header.css" rel="stylesheet" type="text/css" />
+<link href="http://js.51hejia.com/css/2010/brandstyle.css" rel="stylesheet" type="text/css" />
+<SCRIPT src="http://js.51hejia.com/js/cha.js" type=text/javascript></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://d.51hejia.com/js/adv20090721.js"></SCRIPT>
+<%= yield :html_head %>
+<body>
+<!--small_header-->
+<script type="text/javascript" src="http://js.51hejia.com/js/history.js"></script>
+<script language="javascript">
+	function myhejia(){
+		if (Get_Cookie("ind_id").length > 0)
+			location.href="http://member.51hejia.com/member/userinfo";
+		else
+			Divopop('Login');
+	}	
+	function reg(){
+		url = "http://member.51hejia.com/member/reg?forward="+location.href;
+		location.href = url;
+	}
+</script>
+<div class="header_s">
+  <ul>
+    <li class="sshouye"><a href="http://www.51hejia.com/">和家首页</a></li>
+    <li class="spindao"><a href="http://tuku.51hejia.com/">看图片</a><a href="http://z.51hejia.com/">装修点评</a><a href="http://p.51hejia.com/">找低价</a><a href="http://b.51hejia.com/">选品牌</a><a href="http://wb.51hejia.com/">问专家</a></li>
+    <li class="dlu"><a href="#n" onclick="myhejia();" title="我的和家" class="a03"></a><a href="#n"  title="注册" class="a02" onclick="reg();"> </a><a href="#n" onclick="Divopop('Login');"  title="会员登录" class="a01"> </a><span>网友评论千家装修公司</span></li>
+  </ul>
+</div>
+<!--end_small_header-->
+<div id="show_login" style="display:none">
+  <SCRIPT LANGUAGE="JavaScript" Src="http://js.51hejia.com/js/show_login2.js?99301137"></SCRIPT>
+  <iframe name="hideiframe_loginout" width="0" height="0" style="display: none;"></iframe>
+</div>
+<div id="Login" style="display:none;border:0"> <a href="#guanbi" title="关闭" class="Divopop-nonenei"><img src="http://www.51hejia.com/css/newback/images/x.png" alt="关闭" /></a>
+  <iframe id="dengluiframe" style="width:222px;height:224px;border:0;overflow:hidden" frameborder="0" scrolling="no"></iframe>
+</div>
+<div class="b_width960 clearfix">
+  <h1 class="b_logo f_l"><a href="#" target="_blank"><img src="http://js.51hejia.com/img/brandimg/b_logo.jpg" alt="和家网品牌库" /></a></h1>
+  <div class="b_ad01 f_r"><img src="http://js.51hejia.com/img/images/brand/ad01.jpg" /></div>
+</div>
+<div class="b_width960">
+  <div class="b_search">
+    <ul>
+      <li class="b_search_dh">
+      <!--[if lte IE 6]><a href="#"><table><tr><td><![endif]-->
+      <dl>
+			<dt><strong><a href="#" target="_blank">品类导航</a></strong></dt>
+      <dd><a href="#" target="_blank">卫 浴</a></dd>
+      <dd><a href="#" target="_blank">地 板</a></dd>
+      <dd><a href="#" target="_blank">油漆涂料</a></dd>
+      <dd><a href="#" target="_blank">壁 纸</a></dd>
+      <dd><a href="#" target="_blank">厨房/橱柜</a></dd>
+      <dd><a href="#" target="_blank">厨 电</a></dd>
+      <dd><a href="#" target="_blank">采 暖</a></dd>
+      <dd><a href="#" target="_blank">中央空调</a></dd>
+      <dd><a href="#" target="_blank">布艺/床上用品</a></dd>
+      <dd><a href="#" target="_blank">家 电</a></dd>
+      <dd><a href="#" target="_blank">水处理</a></dd>
+      <dd><a href="#" target="_blank">家 具</a></dd>
+      <dd><a href="#" target="_blank">瓷砖/马赛克</a></dd>
+      <dd><a href="#" target="_blank">开关/照明</a></dd>
+      <dd><a href="#" target="_blank">门 窗</a></dd>
+      <dd><a href="#" target="_blank">入墙式衣柜</a></dd>
+			<dd class="b_menu_bottom"></dd>
+		</dl>
+        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+      </li>
+      <li>
+        <form action="" method="get">
+          <select name="">
+            <option>搜索产品</option>
+            <option>搜索品牌</option>
+          </select><input type="text"  title="请输入关键词" onfocus="if(this.value=='请输入关键词') this.value='';" onblur="if(this.value=='')this.value='请输入关键词';" value="请输入关键词" name="keyword" /><select name="">
+            <option>所有分类</option>
+          </select><input type="button" value="搜 索" class="b_search_btn" />
+        </form>
+      </li>
+      <li class="b_search_hot">热门搜索：<a href="#" target="_blank">馨慧</a><a href="#" target="_blank">绩多</a><a href="#" target="_blank">聚艺</a><a href="#" target="_blank">润泰</a><a href="#" target="_blank">聚唐</a><a href="#" target="_blank">德持</a></li>
+    </ul>
+  </div>
+</div>

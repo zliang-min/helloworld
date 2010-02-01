@@ -1,0 +1,143 @@
+<%= render :partial => 'shared/layouts/header' %>
+<div class="b_width960 clearfix">
+  <ul class="b_menu">
+    <li class="b_menu_current"><%= link_to "<strong>品牌首页</strong>", brands_path %></li>
+    <li><%= link_to "<strong>品牌信息</strong>", info_brand_path(1) %></li>
+    <li><%= link_to "<strong>品牌评测导购</strong>", brand_articles_path(1) %></li>
+    <li><%= link_to "<strong>产品信息</strong>", brand_productions_path(1) %></li>
+    <li><%= link_to "<strong>资料下载</strong>", documents_brand_path(1) %></li>
+    <li><a href="#" target="_blank"><strong>品牌专区</strong></a></li>
+  </ul>
+</div>
+<div class="b_width960 clearfix margin10">
+  <div class="b_width680 f_l">
+    <%= yield %>
+  </div>
+  <div class="b_width270 f_r margin10">
+    <h3 class="b_right_tit">方太品牌口碑</h3>
+    <div class="b_right_text b_right_text01">
+      <table width="217" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><label class="b_text_score f_r">得分：<span>8.5</span></label>
+            <h5>和家网口碑排行参与</h5></td>
+        </tr>
+      </table>
+      <table width="217" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="107" align="center" valign="bottom"><span class="b_cylinder_g" style="height:56px;"></span></td>
+          <td height="107" align="center" valign="bottom"><span class="b_cylinder_n" style="height:36px;"></span></td>
+          <td height="107" align="center" valign="bottom"><span class="b_cylinder_b" style="height:16px;"></span></td>
+        </tr>
+        <tr>
+          <td height="24" align="center">30000票</td>
+          <td height="24" align="center">300票</td>
+          <td height="24" align="center">3票</td>
+        </tr>
+        <tr>
+          <td height="36" align="center"><input type="button" value="推 荐" class="b_cylinder_btn"/></td>
+          <td height="36" align="center"><input type="button" value="中 立" class="b_cylinder_btn" /></td>
+          <td height="36" align="center"><input type="button" value="不推荐" class="b_cylinder_btn" /></td>
+        </tr>
+      </table>
+    </div>
+    <div class="b_right_text b_right_text02">
+      <table width="217" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><h5>对本品牌详细评分</h5></td>
+        </tr>
+      </table>
+      <table width="237" border="0" cellspacing="0" cellpadding="0" class="b_cylinder_m">
+        <tr>
+          <td align="right">质量：</td>
+          <td width="130"><ul>
+              <li class="b_cylinder_mg" style="width:70%">350</li>
+              <li class="b_cylinder_mb" style="width:30%">100</li>
+            </ul></td>
+          <td width="55"><input type="button" value="好" class="b_cylinder_btng" /><input type="button" value="坏" class="b_cylinder_btnb" /></td>
+        </tr>
+        <tr>
+          <td align="right">售后：</td>
+          <td width="130"><ul>
+              <li class="b_cylinder_mg" style="width:30%">100</li>
+              <li class="b_cylinder_mb" style="width:70%">350</li>
+            </ul></td>
+          <td width="55"><input type="button" value="好" class="b_cylinder_btng" /><input type="button" value="坏" class="b_cylinder_btnb" /></td>
+        </tr>
+        <tr>
+          <td align="right">口碑：</td>
+          <td width="130"><ul>
+              <li class="b_cylinder_mg" style="width:70%">350</li>
+              <li class="b_cylinder_mb" style="width:30%">100</li>
+            </ul></td>
+          <td width="55"><input type="button" value="好" class="b_cylinder_btng" /><input type="button" value="坏" class="b_cylinder_btnb" /></td>
+        </tr>
+        <tr>
+          <td align="right">性价比：</td>
+          <td width="130"><ul>
+              <li class="b_cylinder_mg" style="width:30%">100</li>
+              <li class="b_cylinder_mb" style="width:70%">350</li>
+            </ul></td>
+          <td width="55"><input type="button" value="好" class="b_cylinder_btng" /><input type="button" value="坏" class="b_cylinder_btnb" /></td>
+        </tr>
+        <tr>
+          <td align="right">知名度：</td>
+          <td width="130"><ul>
+              <li class="b_cylinder_mg" style="width:70%">350</li>
+              <li class="b_cylinder_mb" style="width:30%">100</li>
+            </ul></td>
+          <td width="55"><input type="button" value="好" class="b_cylinder_btng" /><input type="button" value="坏" class="b_cylinder_btnb" /></td>
+        </tr>
+      </table>
+    </div>
+    <div class="b_ad02"><img src="http://js.51hejia.com/img/images/brand/ad02.jpg" /></div>
+    <h3 class="b_right_tit">您可能感兴趣的其他品牌</h3>
+    <div class="b_right_text b_right_text03 clearfix">
+      <ul>
+        <li><a href="#" target="_blank">老板</a></li>
+        <li><a href="#" target="_blank">华帝</a></li>
+        <li><a href="#" target="_blank">西门子</a></li>
+        <li><a href="#" target="_blank">老板</a></li>
+        <li><a href="#" target="_blank">华帝</a></li>
+        <li><a href="#" target="_blank">西门子</a></li>
+        <li><a href="#" target="_blank">老板</a></li>
+        <li><a href="#" target="_blank">华帝</a></li>
+        <li><a href="#" target="_blank">西门子</a></li>
+        <li><a href="#" target="_blank">老板</a></li>
+        <li><a href="#" target="_blank">华帝</a></li>
+        <li><a href="#" target="_blank">西门子</a></li>
+        <li><a href="#" target="_blank">老板</a></li>
+        <li><a href="#" target="_blank">华帝</a></li>
+        <li><a href="#" target="_blank">西门子</a></li>
+        <li><a href="#" target="_blank">老板</a></li>
+        <li><a href="#" target="_blank">华帝</a></li>
+        <li><a href="#" target="_blank">西门子</a></li>
+      </ul>
+    </div>
+    <h3 class="b_right_tit">装修日记</h3>
+    <div class="b_right_text b_right_text04">
+      <ul>
+        <li><a href="#" target="_blank">婆婆媳妇同一屋檐下大户四房简约家</a></li>
+        <li><a href="#" target="_blank">婆婆媳妇同一屋檐下大户四房简约家</a></li>
+        <li><a href="#" target="_blank">婆婆媳妇同一屋檐下大户四房简约家</a></li>
+        <li><a href="#" target="_blank">婆婆媳妇同一屋檐下大户四房简约家</a></li>
+        <li><a href="#" target="_blank">婆婆媳妇同一屋檐下大户四房简约家</a></li>
+        <li><a href="#" target="_blank">婆婆媳妇同一屋檐下大户四房简约家</a></li>
+        <li><a href="#" target="_blank">婆婆媳妇同一屋檐下大户四房简约家</a></li>
+        <li><a href="#" target="_blank">婆婆媳妇同一屋檐下大户四房简约家</a></li>
+        <li><a href="#" target="_blank">婆婆媳妇同一屋檐下大户四房简约家</a></li>
+        <li class="b_more"><a href="#" target="_blank">>>更多</a></li>
+      </ul>
+    </div>
+    <div class="b_ad02"><img src="http://js.51hejia.com/img/images/brand/ad03.jpg" /></div>
+    <h3 class="b_right_tit">浏览过的产品</h3>
+    <div class="b_right_text b_right_text05">
+      <ul>
+        <li><a href="#" target="_blank"><img src="http://js.51hejia.com/img/images/brand/pic01.jpg" alt="婆婆媳妇同一屋檐下大户四房简约家" /></a><a href="#" target="_blank">婆婆媳妇同一屋檐下大户四房简约家</a></li>
+        <li><a href="#" target="_blank"><img src="http://js.51hejia.com/img/images/brand/pic01.jpg" alt="婆婆媳妇同一屋檐下大户四房简约家" /></a><a href="#" target="_blank">婆婆媳妇同一屋檐下大户四房简约家</a></li>
+        <li><a href="#" target="_blank"><img src="http://js.51hejia.com/img/images/brand/pic01.jpg" alt="婆婆媳妇同一屋檐下大户四房简约家" /></a><a href="#" target="_blank">婆婆媳妇同一屋檐下大户四房简约家</a></li>
+        <li><a href="#" target="_blank"><img src="http://js.51hejia.com/img/images/brand/pic01.jpg" alt="婆婆媳妇同一屋檐下大户四房简约家" /></a><a href="#" target="_blank">婆婆媳妇同一屋檐下大户四房简约家</a></li>
+      </ul>    
+    </div>
+  </div>
+</div>
+<%= render :partial => 'shared/layouts/footer' %>
