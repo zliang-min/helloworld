@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :productions
+
   map.resources :brands, :member => { :info => :get, :documents => :get } do |brands|
     brands.resources :articles, :only => :index
     brands.resources :productions, :only => :index
