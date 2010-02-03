@@ -1,0 +1,32 @@
+<table>
+  <thead>
+    <tr>
+      <th>名称</th>
+      <th>型号</th>
+      <th>所属品牌</th>
+      <th>所属品类</th>
+      <th>所属品类</th>
+      <th>产品类别</th>
+      <th>所属系列</th>
+      <th>操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @productions.each do |production| %>
+      <tr>
+        <td><%= production.name %></td>
+        <td><%= production.model %></td>
+        <td><%= production.brand.name %></td>
+        <td><%= production.brand_category.name %></td>
+        <td><%= production.category.name %></td>
+        <td><%= production.series.name %></td>
+        <td>
+          <ul>
+            <li><%= link_to '编辑', edit_production_path(production) %></li>
+            <li><%= link_to '删除', production_path(production) %></li>
+          </ul>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

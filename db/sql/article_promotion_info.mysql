@@ -1,0 +1,14 @@
+-- table
+CREATE TABLE article_promotion_info (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  article_id INTEGER NOT NULL,
+  index_priority INTEGER DEFAULT 0,
+  category_index_priority INTEGER DEFAULT 0,
+  brand_index_priority INTEGER DEFAULT 0
+);
+
+-- indexes
+CREATE UNIQUE INDEX article_promotion_info_article_id_unique_index ON article_promotion_info (article_id);
+CREATE INDEX article_promotion_info_index_priority_index ON article_promotion_info (index_priority);
+CREATE INDEX article_promotion_info_category_index_priority_index ON article_promotion_info (category_index_priority);
+CREATE INDEX article_promotion_info_brand_index_priority_index ON article_promotion_info (brand_index_priority);

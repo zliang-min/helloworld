@@ -7,4 +7,8 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+
+  def page
+    params[:page] ? params[:page].to_i : 1
+  end
 end

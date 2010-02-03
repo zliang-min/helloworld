@@ -1,0 +1,64 @@
+CREATE TABLE production_series (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  code VARCHAR(255),
+  brand_id INTEGER REFERENCES brands (id) ON DELETE SET NULL
+);
+
+CREATE INDEX production_series_brand_id_index ON production_series (brand_id);
+
+CREATE TABLE production_categories (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  code VARCHAR(255)
+);
+
+CREATE TABLE productions (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  model VARCHAR(255),
+  description TEXT,
+  category_id INTEGER REFERENCES production_categories (id) ON DELETE SET NULL,
+  series_id   INTEGER REFERENCES production_series (id) ON DELETE SET NULL 
+);
+
+CREATE INDEX productions_category_id_index ON productions (category_id);
+CREATE INDEX productions_series_id_index ON productions (series_id);
+
+CREATE TABLE pictures (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255),
+  size INTEGER,
+  content_type VARCHAR(255),
+  file_name VARCHAR(255),
+  height INTEGER,
+  width INTEGER,
+  parent_id INTEGER REFERENCES pictures (id) ON DELETE CASCADE,
+  thumbnail VARCHAR(255),
+  attachable_type VARCHAR(255),
+  attachable_id INTEGER
+);
+
+CREATE INDEX pictures_parent_id_index ON pictures (parent_id);
+CREATE INDEX pictures_attachable_type_attachable_id_index ON pictures (attachable_type, attachable_id);
+
+CREATE TABLE production_attributes (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE production_attributes_production_categories (
+  production_attribute_id INTEGER REFERENCES production_attributes (id) ON DELETE CASCADE,
+  production_category_id  INTEGER REFERENCES production_categoris (id) ON DELETE CASCADE
+);
+
+CREATE TABLE production_properties (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  value TEXT NOT NULL,
+  attribute_name VARCHAR(255),
+  production_id INTEGER REFERENCES productions (id) ON DELETE CASCADE,
+  attribute_id  INTEGER REFERENCES production_attributes (id) ON DELETE CASCADE
+);
+
+CREATE INDEX production_properties_production_id ON production_properties (production_id);
+CREATE INDEX production_properties_attribute_id  ON production_properties (attribute_id);

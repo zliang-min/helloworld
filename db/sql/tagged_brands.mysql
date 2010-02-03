@@ -1,0 +1,8 @@
+CREATE TABLE tagged_brands (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  brand_id INTEGER NOT NULL,
+  tag_id INTEGER NOT NULL
+);
+
+CREATE INDEX tagged_brands_brand_id_index ON tagged_brands (brand_id);
+CREATE INDEX tagged_brands_tag_id_index   ON tagged_brands (tag_id);

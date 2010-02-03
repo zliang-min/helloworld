@@ -6,6 +6,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.namespace :admin do |admin|
     admin.root :controller => 'brands', :action => 'index'
+    admin.resources :productions
   end
 
   map.root :controller => 'index'
